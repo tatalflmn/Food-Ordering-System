@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
+import Cardlist from './components/Cardlist.vue'
 
 export default {
   components: {
@@ -10,11 +11,13 @@ export default {
     Home,
     About,
     Contact,
+    Cardlist,
   },
 
   data() {
     return {
-      currentPage: 'Home'
+      currentPage: 'Home',
+      cart: false,
     }
   }, methods: {
     section(p){
@@ -25,14 +28,21 @@ export default {
         top:0,
         behavior: 'smooth'
       })
-    }
+    },
+    openCartModal(i) {
+      this.cart = i
+    },
+    closeModal(i) {
+      this.cart = i;
+    },
   }
 }
 </script>
 
 <template>
-  <Navbar @click="navScroll" @GoTo="section"/>
+  <Navbar @click="navScroll" @GoTo="section" @showCartModal="openCartModal"/>
   <Home v-if="currentPage === 'Home'"/>
   <About v-if="currentPage === 'About'" @GoTo="section"/>
   <Contact v-if="currentPage === 'Contact'"/>
+  <Cardlist v-if="cart === true" @close="closeModal"/>
 </template>
