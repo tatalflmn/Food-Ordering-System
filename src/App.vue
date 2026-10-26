@@ -6,6 +6,7 @@ import Contact from './components/Contact.vue'
 import Cardlist from './components/Cardlist.vue'
 import FoodCard from './components/FoodCard.vue'
 import Footer from './components/Footer.vue'
+import Menupage from './components/Menupage.vue'
 
 export default {
   components: {
@@ -16,6 +17,7 @@ export default {
     Cardlist,
     FoodCard,
     Footer,
+    Menupage,
   },
 
   data() {
@@ -51,4 +53,5 @@ export default {
   <Cardlist v-if="cart === true" @close="closeModal"/>
   <FoodCard/>
   <Footer/>
+  <Menupage v-if="currentPage === 'Menu'"/>
 </template>
