@@ -4,6 +4,7 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Cardlist from './components/Cardlist.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     About,
     Contact,
     Cardlist,
+    Menu,
   },
 
   data() {
@@ -45,4 +47,5 @@ export default {
   <About v-if="currentPage === 'About'" @GoTo="section"/>
   <Contact v-if="currentPage === 'Contact'"/>
   <Cardlist v-if="cart === true" @close="closeModal"/>
+  <Menu v-if="currentPage === 'Menu'"/>
 </template>
