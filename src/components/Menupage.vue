@@ -1,10 +1,10 @@
 <script>
-export default{
-    data(){
-        return{
-            
+export default {
+    data() {
+        return {
+
         }
-    }, methods:{
+    }, methods: {
 
     }
 }
@@ -24,37 +24,37 @@ export default{
 
             <div
                 class="w-fit h-33 border px-5 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/meals1.png" alt="" class="w-20 h-20">
+                <img src="../assets/meals.png" alt="" class="w-20 h-20">
                 <p class="text-white text-center ">Meals</p>
             </div>
 
             <div
                 class="w-fit h-33 border px-5 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/snack1.png" alt="" class="w-23 h-23">
+                <img src="../assets/snacks.png" alt="" class="w-23 h-23">
                 <p class="text-white text-center ">Snack</p>
             </div>
 
             <div
                 class="w-fit h-33 border px-5 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/salad1.png" alt="" class="w-23 h-23">
+                <img src="../assets/salads.png" alt="" class="w-23 h-23">
                 <p class="text-white text-center ">Salad</p>
             </div>
 
             <div
                 class="w-fit h-33 border px-5 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/pizza1.png" alt="" class="w-23 h-23">
+                <img src="../assets/pizza.png" alt="" class="w-23 h-23">
                 <p class="text-white text-center ">Pizza</p>
             </div>
 
             <div
                 class="w-fit h-33 border px-5 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/dessert1.png" alt="" class="w-23 h-23">
+                <img src="../assets/desserts.png" alt="" class="w-23 h-23">
                 <p class="text-white text-center ">Dessert</p>
             </div>
 
             <div
                 class="w-fit h-33 border px-6 py-1  border-orange-800 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-orange-700">
-                <img src="../assets/drinkss.png" alt="" class="w-20 h-23">
+                <img src="../assets/drinks.png" alt="" class="w-20 h-23">
                 <p class="text-white text-center ">Drinks</p>
             </div>
 
@@ -67,89 +67,97 @@ export default{
 
         <div class="flex gap-2 w-290 relative z-99">
             <div class="relative">
-                <img src="../assets/popularPizza1.png" alt="" class="w-25 h-25 absolute top-0 left-8">
+                <img src="../assets/popularPizza.png" alt="" class="w-25 h-25 absolute top-0 left-8">
 
-                <div class=" mt-13 border border-orange-800 rounded-lg flex flex-col items-center gap-5 px-5 py-2 pt-17 cursor-pointer hover:bg-orange-700">
-    
+                <div
+                    class=" mt-13 border border-orange-800 rounded-lg flex flex-col items-center gap-5 px-5 py-2 pt-17 cursor-pointer hover:bg-orange-700">
+
                     <div>
                         <hr class="  border-white w-full">
                         <p class="text-white text-center">Chicken Vegetable <br> Pizza</p>
                         <hr class="  border-white w-full">
                     </div>
-    
+
                     <div class="flex justify-between items-center w-full">
                         <p class="text-white text-xl">$10</p>
-    
-                        <div class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
+
+                        <div
+                            class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
                             <p class=" text-2xl">+</p>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
 
             <div class="relative">
-                <img src="../assets/popularMeal1.png" alt="" class="w-25 h-25 absolute z-5 top-0 left-8  ">
+                <img src="../assets/popularMeal.png" alt="" class="w-25 h-25 absolute z-5 top-0 left-8  ">
 
-                <div class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
-    
+                <div
+                    class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
+
                     <div>
                         <hr class="  border-white w-full">
                         <p class="text-white text-center">Chicken Vegetable <br> Pizza</p>
                         <hr class="  border-white w-full">
                     </div>
-    
+
                     <div class="flex justify-between items-center w-full">
                         <p class="text-white text-xl">$10</p>
-    
-                        <div class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
+
+                        <div
+                            class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
                             <p class=" text-2xl">+</p>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
 
             <div class="relative">
-                <img src="../assets/popularSalad1.png" alt="" class="w-25 h-25 z-5 absolute top-0 left-8">
+                <img src="../assets/popularSalad.png" alt="" class="w-25 h-25 z-5 absolute top-0 left-8">
 
-                <div class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
-    
+                <div
+                    class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
+
                     <div>
                         <hr class="  border-white w-full">
                         <p class="text-white text-center">Chicken Vegetable <br> Pizza</p>
                         <hr class="  border-white w-full">
                     </div>
-    
+
                     <div class="flex justify-between items-center w-full">
                         <p class="text-white text-xl">$10</p>
-    
-                        <div class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
+
+                        <div
+                            class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white">
                             <p class=" text-2xl">+</p>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
 
             <div class="relative">
-                <img src="../assets/popularSnack1.png" alt="" class="w-25 h-25 z-5 absolute top-0 left-8 ">
-                
-                <div class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
-    
+                <img src="../assets/popularDessert.png" alt="" class="w-25 h-25 z-5 absolute top-0 left-8 ">
+
+                <div
+                    class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
+
                     <div>
                         <hr class="  border-white w-full">
                         <p class="text-white text-center">Chicken Vegetable <br> Pizza</p>
                         <hr class="  border-white w-full">
                     </div>
-    
+
                     <div class="flex justify-between items-center w-full">
                         <p class="text-white text-xl">$10</p>
-    
-                        <div class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white ">
+
+                        <div
+                            class=" bg-white rounded-xl px-2 py-1 flex items-center  cursor-pointer hover:bg-black hover:text-white ">
                             <p class="text-2xl">+</p>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
@@ -157,21 +165,23 @@ export default{
             <div class="relative">
                 <img src="../assets/popularMeals.png" alt="" class="w-25 h-25 z-5 absolute top-0  left-8">
 
-                <div class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
-    
+                <div
+                    class="border border-orange-800 rounded-lg flex flex-col items-center gap-5 relative px-5 py-2 pt-17 mt-13 cursor-pointer hover:bg-orange-700">
+
                     <div>
                         <hr class="  border-white w-full">
                         <p class="text-white text-center">Chicken Vegetable <br> Pizza</p>
                         <hr class="  border-white w-full">
                     </div>
-    
+
                     <div class="flex justify-between items-center w-full">
                         <p class="text-white text-xl">$10</p>
-    
-                        <div class=" bg-white rounded-xl px-2 py-1 flex items-center cursor-pointer hover:bg-black hover:text-white">
+
+                        <div
+                            class=" bg-white rounded-xl px-2 py-1 flex items-center cursor-pointer hover:bg-black hover:text-white">
                             <p class="text-2xl">+</p>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
