@@ -15,10 +15,10 @@ export default {
 }
 </script>
 <template>
-    <div class="inset-0 z-999 flex items-center h-screen justify-end top-0 fixed mt-5">
+    <div class="inset-0 z-999 flex items-center h-screen justify-end top-0 fixed ">
 
         <div
-            class="relative flex max-h-[120vh] w-full max-w-sm flex-col overflow-hidden  rounded-xl bg-gray-200 shadow-2xl">
+            class="relative flex h-screen w-full max-w-sm flex-col justify-between overflow-hidden  rounded-xl bg-gray-200 shadow-2xl">
 
             <div class="flex items-center justify-between bg-black/30 px-5 py-4 text-white sm:px-7">
 
@@ -93,7 +93,7 @@ export default {
 
                         </div>
                         <button
-                            class="rounded-xl text-red-500 text-center  font-bold text-gray-900 transition hover:scale-103 duration-100">
+                            class="rounded-xl text-red-500 text-center  font-bold transition hover:scale-103 duration-100">
                             Remove
                         </button>
 
