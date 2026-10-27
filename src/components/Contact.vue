@@ -6,11 +6,11 @@
 
 
     <section class="text-gray-600 bg-black body-font relative">
-        <div class="container pl-35 px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div class="container pl-60 px-10 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
 
             <!-- MAPA -->
             <div
-                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative z-99">
 
                 <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
                     marginwidth="0" scrolling="no"
@@ -34,7 +34,7 @@
 
 
             <!-- CONTACT INFORMATION -->
-            <div class=" bg-white flex flex-col  p-5 rounded-lg w-100">
+            <div class=" bg-white flex flex-col  p-5 rounded-lg w-100 z-99">
                 <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Silingan</h2>
                 <p class="leading-relaxed mb-5 text-gray-600">Contact Us!
                 </p>
