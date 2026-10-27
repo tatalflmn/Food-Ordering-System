@@ -1,8 +1,9 @@
 <script>
 import image1 from '../assets/popularMeal.png'
 import image2 from '../assets/popularMeals.png'
-import image3 from '../assets/popularDessert.png'
-import image4 from '../assets/popularSnacks2.png'
+import image3 from '../assets/popularDesserts.png'
+import image4 from '../assets/popularSnack.png'
+import image5 from '../assets/popularSnacks.png'
 
 export default {
     props: ['forFoods'],
@@ -12,33 +13,28 @@ export default {
             populars: [
                 {
                     id: 1,
-                    name: 'Salmon with Caviar',
+                    name: 'SALMON',
                     image: image1,
-                    price: 200
                 },
                 {
                     id: 2,
-                    name: 'Pork Stew Kare-Kare',
+                    name: 'BEEF STEAK',
                     image: image2,
-                    price: 200
                 },
                 {
                     id: 3,
-                    name: 'Cookie Ice Cream Choco Drizzled',
+                    name: 'BELGIAN WAFFLE',
                     image: image3,
-                    price: 200
                 },
                 {
                     id: 4,
-                    name: 'Salmon with Caviar',
+                    name: 'GOURMET FRIES',
                     image: image4,
-                    price: 200
                 },
                 {
                     id: 5,
-                    name: 'Tomato Cucumber Salad',
-                    image: 'https://png.pngtree.com/png-vector/20240913/ourmid/pngtree-salad-png-image_12846637.png',
-                    price: 200
+                    name: 'BEEF NACHOS',
+                    image: image5,
                 },
             ]
         }
@@ -110,7 +106,7 @@ export default {
                     <img :src="popular.image" alt="" class="w-25 h-25 absolute top-0 left-8">
 
                     <div
-                        class=" mt-13 border w-43 h-45 border-orange-600 rounded-lg flex flex-col items-center gap-5 px-5  pt-17 cursor-pointer hover:bg-orange-700">
+                        class=" mt-13 border w-43 h-35 border-orange-600 rounded-lg flex flex-col items-center gap-5 px-5  pt-17 cursor-pointer hover:bg-orange-700">
 
                         <div>
                             <hr class="  border-white w-full">
@@ -118,15 +114,7 @@ export default {
                             <hr class="  border-white w-full">
                         </div>
 
-                        <div class="flex justify-between items-center w-full">
-                            <p class="text-white text-xl">₱ {{ popular.price }}</p>
-
-                            <div
-                                class=" bg-white rounded-xl px-2  flex items-center  cursor-pointer hover:bg-black hover:text-white">
-                                <p class=" text-2xl">+</p>
-                            </div>
-
-                        </div>
+                        
                     </div>
                 </div>
 
