@@ -37,7 +37,6 @@ export default {
           description: 'chicken potato a hearty, satisfying, and deeply savory profile.',
           category: 'Meals'
         },
-
         {
           id: 2,
           name: 'SALMON',
@@ -46,7 +45,6 @@ export default {
           description: 'it is a flaky pink fish with a rich, buttery flavor and crisp skin',
           category: 'Meals'
         },
-
         {
           id: 3,
           name: 'SHRIMP',
@@ -55,7 +53,6 @@ export default {
           description: 'a culinary seafood dish made with fresh or frozen shrimp.',
           category: 'Meals'
         },
-
         {
           id: 4,
           name: 'BEEF STEAK',
@@ -64,7 +61,6 @@ export default {
           description: 'featuring thinly sliced beef braised in soy sauce and citrus.',
           category: 'Meals'
         },
-
         {
           id: 5,
           name: 'LECHON BELLY',
@@ -73,7 +69,6 @@ export default {
           description: 'classic flavors of whole-pig lechon on a smaller, convenient scale.',
           category: 'Meals'
         },
-
         {
           id: 6,
           name: 'CHICKEN BUFFALO',
@@ -82,7 +77,6 @@ export default {
           description: 'traditionally fried wings or baked/grilled chicken breasts.',
           category: 'Meals'
         },
-
         {
           id: 7,
           name: 'CHICKEN SKEWERS',
@@ -91,7 +85,6 @@ export default {
           description: 'marinated chicken breast or thigh threaded onto wooden or metal sticks.',
           category: 'Meals'
         },
-
         {
           id: 8,
           name: 'CARBONARA',
@@ -100,7 +93,6 @@ export default {
           description: 'glossy sauce of eggs, hard cheese, cured pork, and black pepper.',
           category: 'Meals'
         },
-
         {
           id: 9,
           name: 'CHURROS',
@@ -109,7 +101,6 @@ export default {
           description: 'ridged, deep-fried choux pastry sticks coated in cinnamon sugar.',
           category: 'Snacks'
         },
-
         {
           id: 10,
           name: 'MOZZARELLA STICKS',
@@ -126,7 +117,6 @@ export default {
           description: 'a peeled banana in half lengthwise and placing it in a long dish.',
           category: 'Snacks'
         },
-
         {
           id: 12,
           name: 'GOURMET FRIES',
@@ -135,7 +125,6 @@ export default {
           description: 'deep-fried strips of potato featuring a crispy exterior and a soft, fluffy interior.',
           category: 'Snacks'
         },
-
         {
           id: 13,
           name: 'MEATBALLS',
@@ -144,7 +133,6 @@ export default {
           description: 'a small, round sphere made from chopped or ground meat',
           category: 'Snacks'
         },
-
         {
           id: 14,
           name: 'BURGER WITH FRIES',
@@ -153,7 +141,6 @@ export default {
           description: 'a hearty, savory comfort meal pairing a warm, meat-filled sandwich.',
           category: 'Snacks'
         },
-
         {
           id: 15,
           name: 'BEEF NACHOS',
@@ -162,7 +149,6 @@ export default {
           description: 'crisp corn tortilla chips, layered or topped with savory beef and cheese.',
           category: 'Snacks'
         },
-
         {
           id: 16,
           name: 'CRUNCHY COOKIES',
@@ -171,7 +157,6 @@ export default {
           description: 'driven by a lower moisture content and specific ingredient ratios.',
           category: 'Snacks'
         },
-
         {
           id: 17,
           name: 'COCKTAILS',
@@ -180,7 +165,6 @@ export default {
           description: 'made by combining a distilled spirit with other ingredients.',
           category: 'Drinks'
         },
-
         {
           id: 18,
           name: 'FRUITY DRINKS',
@@ -189,7 +173,6 @@ export default {
           description: 'cooked fruit flavor profile rather than a single narrow spice.',
           category: 'Drinks'
         },
-
         {
           id: 19,
           name: 'ICED TEA LEMON',
@@ -198,7 +181,6 @@ export default {
           description: 'a cold, refreshing beverage made by combining chilled brewed tea',
           category: 'Drinks'
         },
-
         {
           id: 20,
           name: 'COCA COLA',
@@ -207,7 +189,6 @@ export default {
           description: 'a flavor profile built on a blend of caramel sweetness, citrus oils',
           category: 'Drinks'
         },
-
         {
           id: 21,
           name: 'LEMON JUICE',
@@ -216,7 +197,6 @@ export default {
           description: 'the acidic, sour liquid obtained by squeezing the endocarp of lemons.',
           category: 'Drinks'
         },
-
         {
           id: 22,
           name: 'SPRITE',
@@ -225,7 +205,6 @@ export default {
           description: 'This is a clear, caffeine-free, lemon-lime-flavored soft drink',
           category: 'Drinks'
         },
-
         {
           id: 23,
           name: 'BLUE LEMONADE',
@@ -316,6 +295,10 @@ export default {
         return this.foods;
       }
       return this.foods.filter(food => food.category === this.selectedCategory);
+    },
+    // Computes total count of items in the cart
+    cartCount() {
+      return this.cartItems.reduce((total, item) => total + item.quantity, 0);
     }
   },
 
@@ -343,7 +326,7 @@ export default {
 
     // Cart Actions
     addToCart(food) {
-      alert('Added to Cart')
+      alert('Added to Cart');
       const existing = this.cartItems.find(item => item.id === food.id);
       if (existing) {
         existing.quantity += 1;
@@ -373,7 +356,8 @@ export default {
 </script>
 
 <template>
-  <Navbar @GoTo="section" @showCartModal="openCartModal" />
+  <!-- Pass the computed cartCount prop to the Navbar component -->
+  <Navbar :cart-count="cartCount" @GoTo="section" @showCartModal="openCartModal" />
 
   <Home v-if="currentPage === 'Home'" @GoTo="section" />
   <About v-if="currentPage === 'About'" @GoTo="section" />
