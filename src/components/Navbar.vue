@@ -24,8 +24,8 @@ export default {
         <div class=" w-60 ">
 
             <div class="flex flex-col justify-center items-center w-full h-100 gap-10">
-                <h1 class="text-xl md:text-2xl text-white text-center font-bold italic font-serif">SILI <span
-                        class="text-yellow-500">NGAN</span></h1>
+                <img src="../assets/silingan logo.png" alt="" class="w-20">
+                
 
                 <div class="text-center flex flex-col gap-10 ">
                     <div class="flex gap-4 items-center">
