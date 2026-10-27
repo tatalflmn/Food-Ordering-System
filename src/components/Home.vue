@@ -1,5 +1,17 @@
 <script>
+export default {
+  emits:['GoTo'],
+  data() {
+    return {
 
+    }
+  },
+  methods: {
+    navi(page) {
+      this.$emit('GoTo', page);
+    },
+  }
+}
 </script>
 
 <template>
@@ -23,11 +35,11 @@
         Make your day awesome with our food delivery.
       </p>
       <div class="mt-6">
-        <a href="#"
-          class="group px-6 py-3 bg-orange-400 hover:bg-orange-500 rounded-lg text-lg font-semibold transition inline-flex items-center">
+        <p @click="navi('Menu')"
+          class="group px-6 py-3 cursor-pointer bg-orange-400 hover:bg-orange-500 rounded-lg text-lg font-semibold transition inline-flex items-center">
           Order Now
           <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
-        </a>
+        </p>
       </div>
 
     </div>

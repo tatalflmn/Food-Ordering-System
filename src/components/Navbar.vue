@@ -19,7 +19,7 @@ export default {
 
 <template>
 
-    <div class="z-50 fixed top-30 left-0 w-297">
+    <div class="z-99 fixed top-30 left-0">
 
         <div class=" w-60 ">
 
