@@ -17,7 +17,7 @@ export default {
 <template>
 
   <div
-    class="relative w-full min-h-[90vh] flex flex-col justify-center items-center text-center px-6 lg:px-16 py-16 md:py-32">
+    class="relative w-full min-h-screen flex flex-col justify-center items-center text-center px-6 lg:px-16 py-16 md:py-32">
     <!-- Background Image -->
 
     <img class="absolute inset-0  w-full h-screen"
