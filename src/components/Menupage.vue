@@ -100,7 +100,7 @@ export default {
         </h1>
 
         <!-- Popular Dishes Section -->
-        <div class="flex justify-center gap-5 w-full relative z-99 pl-15">
+        <div class="flex justify-center gap-5 w-full relative pl-15">
             <div v-for="popular in populars" :key="popular.id" class="flex relative z-99">
                 <div class="relative">
                     <img :src="popular.image" alt="" class="w-25 h-25 absolute top-0 left-8">
