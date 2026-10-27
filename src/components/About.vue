@@ -20,7 +20,7 @@ export default {
     <div class="">
 
         <section id="about" class="py-20 md:px-20 lg:px-20 bg-[#121212] w-full h-screen">
-            <div class="container mx-auto px-35 py-25">
+            <div class="container mx-auto px-50 py-25">
                 <div class="mb-12">
                     <!-- Heading -->
                     <h2 class="text-orange-400 text-lg mb-2" data-aos="fade-down">
