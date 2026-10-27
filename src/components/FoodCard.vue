@@ -1,6 +1,7 @@
 <script>
 
 export default {
+    props: ['forFoods'],
     data() {
         return {
 
@@ -19,7 +20,7 @@ export default {
     <div class="px-10 py-5 bg-black ">
 
         <div class="flex justify-between items-center px-48">
-            <h1 class="text-3xl font-bold italic text-center text-white m-10">Dessert Menu :</h1>
+            <h1 class="text-3xl font-bold italic text-center text-white m-10">Food Menu :</h1>
             <p class="text-2xl text-white ">X</p>
         </div>
         <section class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 px-45">
@@ -45,7 +46,7 @@ export default {
                 </div>
 
                 <!-- Food Name -->
-                <h3 class="min-h-[52px] text-center text-xl font-extrabold" :class="index === 1
+                <h3 class="min-h-13 text-center text-xl font-extrabold" :class="index === 1
                     ? 'text-white'
                     : 'text-stone-900'">
                     {{ food.name }}
