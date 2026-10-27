@@ -388,5 +388,5 @@ export default {
   <FoodCard v-if="currentPage === 'FoodCard'" :forFoods="filteredFoods" @close="currentPage = 'Menu'"
     @add-to-cart="addToCart" />
 
-  <Footer />
+  <Footer @GoTo="section" />
 </template>
