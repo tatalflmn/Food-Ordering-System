@@ -1,15 +1,11 @@
 <script>
 
 export default {
-    props: ['forFoods'],
-
     data() {
         return {
 
-
         }
     }, methods: {
-
 
     }
 }
@@ -19,29 +15,17 @@ export default {
 
 <template>
 
-
     <!-- FOODS -->
-    <div class="px-10 w-full h-fit min-h-screen py-5 bg-black/90 z-999 pt-10">
-
-        <form class="mt-10 mx-auto max-w-xl py-2 px-6 rounded-full bg-gray-50 border flex focus-within:border-gray-300">
-            <input type="text" placeholder="Search here"
-                class="bg-transparent w-full focus:outline-none pr-4 font-semibold border-0 focus:ring-0 px-0 py-0"
-                name="topic"><button
-                class="flex flex-row items-center justify-center min-w-[130px] px-2 rounded-full font-medium tracking-wide border cursor-pointer hover:scale-105 duration-300  disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black text-white font-medium tracking-wide border-transparent py-1.5 h-[38px] -mr-3">
-                Search
-            </button>
-        </form>
+    <div class="px-10 py-5 bg-black ">
 
         <div class="flex justify-between items-center px-48">
-            <h1 class="text-3xl font-bold italic text-center text-white m-10 pt-5">Food Menu :</h1>
-
+            <h1 class="text-3xl font-bold italic text-center text-white m-10">Dessert Menu :</h1>
+            <p class="text-2xl text-white ">X</p>
         </div>
-
         <section class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 px-45">
 
             <div v-for="food in forFoods" :key="food.id"
-                class="food-card relative rounded-[28px] border border-stone-100 bg-white p-5 shadow-lg hover:scale-103 transition duration-300 cursor-pointer"
-                :class="index === 1
+                class="food-card relative rounded-[28px] border border-stone-100 bg-white p-5 shadow-lg" :class="index === 1
                     ? 'bg-amber-400'
                     : ''">
 
@@ -98,7 +82,6 @@ export default {
 
         </section>
     </div>
-
 
 
 </template>

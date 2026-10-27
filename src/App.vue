@@ -4,6 +4,8 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Cardlist from './components/Cardlist.vue'
+import FoodCard from './components/FoodCard.vue'
+import Footer from './components/Footer.vue'
 import Menupage from './components/Menupage.vue'
 import FoodCard from './components/FoodCard.vue'
 import Footer from './components/Footer.vue'
@@ -15,6 +17,8 @@ export default {
     About,
     Contact,
     Cardlist,
+    FoodCard,
+    Footer,
     Menupage,
     FoodCard,
     Footer
