@@ -1,87 +1,193 @@
 <script>
-
 export default {
     emits: ['GoTo'],
-    data() {
-        return {
 
-        }
-    }, methods: {
+    methods: {
         navi(page) {
-            this.$emit('GoTo', page);
+            this.$emit('GoTo', page)
         }
     }
 }
-
 </script>
 
 <template>
+    <section id="about" class="bg-[#121212] text-white
+        w-full min-h-screen
+        py-12 sm:py-16 lg:py-20
+        px-4 sm:px-6 lg:px-8">
 
-    <div class="">
+        <!-- Main Container -->
+        <div class="w-full max-w-7xl mx-auto
+            px-0 sm:px-4 lg:px-8
+            py-4 sm:py-6 lg:py-10">
 
-        <section id="about" class="py-20 md:px-20 lg:px-20 bg-[#121212] w-full h-screen">
-            <div class="container mx-auto px-50 py-25">
-                <div class="mb-12">
-                    <!-- Heading -->
-                    <h2 class="text-orange-400 text-lg mb-2" data-aos="fade-down">
-                        About Us
-                    </h2>
-                    <h3 class="mb-4 text-3xl font-bold text-white section-title" data-aos="fade-down">
-                        Charging forward together
-                    </h3>
-                    <p class="mb-8 max-w-3xl text-gray-400" data-aos="fade-down">
-                        Guided by the Silingan, our mission is to drive within the Philippines forward by creating
-                        economic
-                        empowerment for everyone.
-                    </p>
+            <!-- About Heading -->
+            <div class="mb-8 sm:mb-10 lg:mb-12">
 
-                    <!-- About Cards Section -->
-                    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                        <!-- Card 1 -->
-                        <div class="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 flex flex-col items-center">
-                            <svg class="fill-orange-400 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                <path
-                                    d="M155.6 81.3C163 67 179.9 60.4 195 65.9L320 111.5L445 65.9C460.1 60.4 477 67 484.4 81.3L563.2 234.2C592 290 573.5 356.5 524.7 390.8L556 477L597 462C613.6 456 632 464.5 638 481.1C644 497.7 635.5 516.1 618.9 522.1C571.5 539.4 524.1 556.6 476.7 573.9C460.1 580 441.7 571.4 435.7 554.8C429.7 538.2 438.2 519.8 454.8 513.8L495.8 498.8L464.5 412.6C405.1 417.8 348.3 378.7 334.5 317.4L319.9 252.7L305.3 317.4C291.5 378.7 234.7 417.8 175.3 412.6L144 498.8L185 513.8C201.6 519.9 210.2 538.2 204.1 554.8C198 571.4 179.7 580 163.1 573.9C115.7 556.6 68.3 539.3 20.9 522.1C4.3 516-4.3 497.7 1.8 481.1C7.9 464.5 26.3 456 42.9 462L83.9 477L115.2 390.8C66.5 356.5 48.1 290 76.9 234.2L155.6 81.3zM199.6 135.7L172.4 188.5L261.6 221L274.7 163.1L199.6 135.7zM440.5 135.7L365.4 163.1L378.5 221L467.7 188.5L440.5 135.7z" />
-                            </svg>
-                            <p class="text-gray-400">Years Experience</p>
-                        </div>
+                <h2 class="text-orange-400
+                    text-base sm:text-lg
+                    mb-2" data-aos="fade-down">
+                    About Us
+                </h2>
 
-                        <div class="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 flex flex-col items-center">
-                            <svg class="fill-orange-400 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                <path
-                                    d="M320 107.4C202.6 107.4 107.4 202.6 107.4 320C107.4 437.4 202.6 532.6 320 532.6C437.4 532.6 532.6 437.4 532.6 320C532.6 202.6 437.4 107.4 320 107.4zM222.6 240.3C222.6 186.6 266.3 142.9 320 142.9C373.7 142.9 417.4 186.6 417.4 240.3L417.4 266.9C417.4 271.9 413.5 275.8 408.5 275.8L390.8 275.8C385.8 275.8 381.9 271.9 381.9 266.9L381.9 240.3C381.9 158.2 257.9 158.2 257.9 240.3L257.9 266.9C257.9 271.9 254 275.8 249 275.8L231.3 275.8C226.3 275.8 222.4 271.9 222.4 266.9L222.4 240.3L222.6 240.3zM461.7 444C461.7 453.7 453.7 461.7 444 461.7L196 461.7C186.3 461.7 178.3 453.7 178.3 444L178.3 302.3C178.3 292.6 186.3 284.6 196 284.6L444 284.6C453.7 284.6 461.7 292.6 461.7 302.3L461.7 444zM213.7 306.7L213.7 439.6C213.7 442.1 211.8 444 209.3 444L200.4 444C197.9 444 196 442.1 196 439.6L196 306.7C196 304.2 197.9 302.3 200.4 302.3L209.3 302.3C211.8 302.3 213.7 304.2 213.7 306.7zM355.4 355.4C355.4 368.4 348.2 379.8 337.7 385.8L337.7 417.4C337.7 422.4 333.8 426.3 328.8 426.3L311.1 426.3C306.1 426.3 302.2 422.4 302.2 417.4L302.2 385.8C291.7 379.7 284.5 368.4 284.5 355.4C284.5 335.7 300.3 320 319.9 320C339.5 320 355.4 335.8 355.4 355.4zM320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM320 89.7C447.2 89.7 550.3 192.8 550.3 320C550.3 447.2 447.2 550.3 320 550.3C192.8 550.3 89.7 447.2 89.7 320C89.7 192.8 192.8 89.7 320 89.7z" />
-                            </svg>
-                            <p class="text-gray-400">Authority</p>
-                        </div>
+                <h3 class="mb-4
+                    text-2xl sm:text-3xl lg:text-4xl
+                    font-bold
+                    leading-tight
+                    break-words" data-aos="fade-down">
+                    Charging forward together
+                </h3>
 
-                        <div class="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 flex flex-col items-center">
-                            <svg class="fill-orange-400 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                <path
-                                    d="M300.9 149.2L184.3 278.8C179.7 283.9 179.9 291.8 184.8 296.7C215.3 327.2 264.8 327.2 295.3 296.7L327.1 264.9C331.3 260.7 336.6 258.4 342 258C348.8 257.4 355.8 259.7 361 264.9L537.6 440L608 384L608 96L496 160L472.2 144.1C456.4 133.6 437.9 128 418.9 128L348.5 128C347.4 128 346.2 128 345.1 128.1C328.2 129 312.3 136.6 300.9 149.2zM148.6 246.7L255.4 128L215.8 128C190.3 128 165.9 138.1 147.9 156.1L144 160L32 96L32 384L188.4 514.3C211.4 533.5 240.4 544 270.3 544L286 544L279 537C269.6 527.6 269.6 512.4 279 503.1C288.4 493.8 303.6 493.7 312.9 503.1L353.9 544.1L362.9 544.1C382 544.1 400.7 539.8 417.7 531.8L391 505C381.6 495.6 381.6 480.4 391 471.1C400.4 461.8 415.6 461.7 424.9 471.1L456.9 503.1L474.4 485.6C483.3 476.7 485.9 463.8 482 452.5L344.1 315.7L329.2 330.6C279.9 379.9 200.1 379.9 150.8 330.6C127.8 307.6 126.9 270.7 148.6 246.6z" />
-                            </svg>
-                            <p class="text-gray-400">Trusted Shareholder</p>
-                        </div>
+                <p class="mb-6 sm:mb-8
+                    max-w-3xl
+                    text-sm sm:text-base
+                    leading-relaxed
+                    text-gray-400" data-aos="fade-down">
+                    Guided by the Silingan, our mission is to drive within
+                    the Philippines forward by creating economic empowerment
+                    for everyone.
+                </p>
 
-                        <div class="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 flex flex-col items-center">
-                            <svg class="fill-orange-400 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                <path
-                                    d="M64 160C64 124.7 92.7 96 128 96L416 96C451.3 96 480 124.7 480 160L480 192L530.7 192C547.7 192 564 198.7 576 210.7L621.3 256C633.3 268 640 284.3 640 301.3L640 448C640 483.3 611.3 512 576 512L572.7 512C562.3 548.9 528.3 576 488 576C447.7 576 413.8 548.9 403.3 512L300.7 512C290.3 548.9 256.3 576 216 576C175.7 576 141.8 548.9 131.3 512L128 512C92.7 512 64 483.3 64 448L64 400L24 400C10.7 400 0 389.3 0 376C0 362.7 10.7 352 24 352L136 352C149.3 352 160 341.3 160 328C160 314.7 149.3 304 136 304L24 304C10.7 304 0 293.3 0 280C0 266.7 10.7 256 24 256L200 256C213.3 256 224 245.3 224 232C224 218.7 213.3 208 200 208L24 208C10.7 208 0 197.3 0 184C0 170.7 10.7 160 24 160L64 160zM576 352L576 301.3L530.7 256L480 256L480 352L576 352zM256 488C256 465.9 238.1 448 216 448C193.9 448 176 465.9 176 488C176 510.1 193.9 528 216 528C238.1 528 256 510.1 256 488zM488 528C510.1 528 528 510.1 528 488C528 465.9 510.1 448 488 448C465.9 448 448 465.9 448 488C448 510.1 465.9 528 488 528z" />
-                            </svg>
-                            <p class="text-gray-400">Fast Delivery</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Buttons Section -->
-                <div class="flex flex-col sm:flex-row items-center gap-4 mt-8" data-aos="fade-up">
-                    <p @click="navi('Contact')"
-                        class="cursor-pointer rounded-full border-2 py-3 px-5 border-white text-white hover:bg-white hover:text-purple-900 transition duration-300 ease-in-out">
-                        Contact Us
-                    </p>
-                </div>
             </div>
-        </section>
-    </div>
 
+            <!-- About Cards Section -->
+            <div class="grid
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                gap-4 sm:gap-5 lg:gap-6">
+
+                <!-- Card 1: Years Experience -->
+                <div class="rounded-lg
+                    border border-gray-800
+                    bg-[#1A1A1A]
+                    p-5 sm:p-6
+                    min-h-36
+                    flex flex-col
+                    items-center justify-center
+                    text-center
+                    gap-3
+                    transition duration-300
+                    hover:border-orange-400
+                    hover:-translate-y-1">
+
+                    <svg class="fill-orange-400 w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640" aria-hidden="true">
+                        <path
+                            d="M155.6 81.3C163 67 179.9 60.4 195 65.9L320 111.5L445 65.9C460.1 60.4 477 67 484.4 81.3L563.2 234.2C592 290 573.5 356.5 524.7 390.8L556 477L597 462C613.6 456 632 464.5 638 481.1C644 497.7 635.5 516.1 618.9 522.1C571.5 539.4 524.1 556.6 476.7 573.9C460.1 580 441.7 571.4 435.7 554.8C429.7 538.2 438.2 519.8 454.8 513.8L495.8 498.8L464.5 412.6C405.1 417.8 348.3 378.7 334.5 317.4L319.9 252.7L305.3 317.4C291.5 378.7 234.7 417.8 175.3 412.6L144 498.8L185 513.8C201.6 519.9 210.2 538.2 204.1 554.8C198 571.4 179.7 580 163.1 573.9C115.7 556.6 68.3 539.3 20.9 522.1C4.3 516-4.3 497.7 1.8 481.1C7.9 464.5 26.3 456 42.9 462L83.9 477L115.2 390.8C66.5 356.5 48.1 290 76.9 234.2L155.6 81.3zM199.6 135.7L172.4 188.5L261.6 221L274.7 163.1L199.6 135.7zM440.5 135.7L365.4 163.1L378.5 221L467.7 188.5L440.5 135.7z" />
+                    </svg>
+
+                    <p class="text-gray-400 text-sm sm:text-base">
+                        Years Experience
+                    </p>
+
+                </div>
+
+                <!-- Card 2: Authority -->
+                <div class="rounded-lg
+                    border border-gray-800
+                    bg-[#1A1A1A]
+                    p-5 sm:p-6
+                    min-h-36
+                    flex flex-col
+                    items-center justify-center
+                    text-center
+                    gap-3
+                    transition duration-300
+                    hover:border-orange-400
+                    hover:-translate-y-1">
+
+                    <svg class="fill-orange-400 w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640" aria-hidden="true">
+                        <path
+                            d="M320 107.4C202.6 107.4 107.4 202.6 107.4 320C107.4 437.4 202.6 532.6 320 532.6C437.4 532.6 532.6 437.4 532.6 320C532.6 202.6 437.4 107.4 320 107.4zM222.6 240.3C222.6 186.6 266.3 142.9 320 142.9C373.7 142.9 417.4 186.6 417.4 240.3L417.4 266.9C417.4 271.9 413.5 275.8 408.5 275.8L390.8 275.8C385.8 275.8 381.9 271.9 381.9 266.9L381.9 240.3C381.9 158.2 257.9 158.2 257.9 240.3L257.9 266.9C257.9 271.9 254 275.8 249 275.8L231.3 275.8C226.3 275.8 222.4 271.9 222.4 266.9L222.4 240.3L222.6 240.3zM461.7 444C461.7 453.7 453.7 461.7 444 461.7L196 461.7C186.3 461.7 178.3 453.7 178.3 444L178.3 302.3C178.3 292.6 186.3 284.6 196 284.6L444 284.6C453.7 284.6 461.7 292.6 461.7 302.3L461.7 444zM213.7 306.7L213.7 439.6C213.7 442.1 211.8 444 209.3 444L200.4 444C197.9 444 196 442.1 196 439.6L196 306.7C196 304.2 197.9 302.3 200.4 302.3L209.3 302.3C211.8 302.3 213.7 304.2 213.7 306.7zM355.4 355.4C355.4 368.4 348.2 379.8 337.7 385.8L337.7 417.4C337.7 422.4 333.8 426.3 328.8 426.3L311.1 426.3C306.1 426.3 302.2 422.4 302.2 417.4L302.2 385.8C291.7 379.7 284.5 368.4 284.5 355.4C284.5 335.7 300.3 320 319.9 320C339.5 320 355.4 335.8 355.4 355.4zM320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM320 89.7C447.2 89.7 550.3 192.8 550.3 320C550.3 447.2 447.2 550.3 320 550.3C192.8 550.3 89.7 447.2 89.7 320C89.7 192.8 192.8 89.7 320 89.7z" />
+                    </svg>
+
+                    <p class="text-gray-400 text-sm sm:text-base">
+                        Authority
+                    </p>
+
+                </div>
+
+                <!-- Card 3: Trusted Shareholder -->
+                <div class="rounded-lg
+                    border border-gray-800
+                    bg-[#1A1A1A]
+                    p-5 sm:p-6
+                    min-h-36
+                    flex flex-col
+                    items-center justify-center
+                    text-center
+                    gap-3
+                    transition duration-300
+                    hover:border-orange-400
+                    hover:-translate-y-1">
+
+                    <svg class="fill-orange-400 w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640" aria-hidden="true">
+                        <path
+                            d="M300.9 149.2L184.3 278.8C179.7 283.9 179.9 291.8 184.8 296.7C215.3 327.2 264.8 327.2 295.3 296.7L327.1 264.9C331.3 260.7 336.6 258.4 342 258C348.8 257.4 355.8 259.7 361 264.9L537.6 440L608 384L608 96L496 160L472.2 144.1C456.4 133.6 437.9 128 418.9 128L348.5 128C347.4 128 346.2 128 345.1 128.1C328.2 129 312.3 136.6 300.9 149.2zM148.6 246.7L255.4 128L215.8 128C190.3 128 165.9 138.1 147.9 156.1L144 160L32 96L32 384L188.4 514.3C211.4 533.5 240.4 544 270.3 544L286 544L279 537C269.6 527.6 269.6 512.4 279 503.1C288.4 493.8 303.6 493.7 312.9 503.1L353.9 544.1L362.9 544.1C382 544.1 400.7 539.8 417.7 531.8L391 505C381.6 495.6 381.6 480.4 391 471.1C400.4 461.8 415.6 461.7 424.9 471.1L456.9 503.1L474.4 485.6C483.3 476.7 485.9 463.8 482 452.5L344.1 315.7L329.2 330.6C279.9 379.9 200.1 379.9 150.8 330.6C127.8 307.6 126.9 270.7 148.6 246.6z" />
+                    </svg>
+
+                    <p class="text-gray-400 text-sm sm:text-base">
+                        Trusted Shareholder
+                    </p>
+
+                </div>
+
+                <!-- Card 4: Fast Delivery -->
+                <div class="rounded-lg
+                    border border-gray-800
+                    bg-[#1A1A1A]
+                    p-5 sm:p-6
+                    min-h-36
+                    flex flex-col
+                    items-center justify-center
+                    text-center
+                    gap-3
+                    transition duration-300
+                    hover:border-orange-400
+                    hover:-translate-y-1">
+
+                    <svg class="fill-orange-400 w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640" aria-hidden="true">
+                        <path
+                            d="M64 160C64 124.7 92.7 96 128 96L416 96C451.3 96 480 124.7 480 160L480 192L530.7 192C547.7 192 564 198.7 576 210.7L621.3 256C633.3 268 640 284.3 640 301.3L640 448C640 483.3 611.3 512 576 512L572.7 512C562.3 548.9 528.3 576 488 576C447.7 576 413.8 548.9 403.3 512L300.7 512C290.3 548.9 256.3 576 216 576C175.7 576 141.8 548.9 131.3 512L128 512C92.7 512 64 483.3 64 448L64 400L24 400C10.7 400 0 389.3 0 376C0 362.7 10.7 352 24 352L136 352C149.3 352 160 341.3 160 328C160 314.7 149.3 304 136 304L24 304C10.7 304 0 293.3 0 280C0 266.7 10.7 256 24 256L200 256C213.3 256 224 245.3 224 232C224 218.7 213.3 208 200 208L24 208C10.7 208 0 197.3 0 184C0 170.7 10.7 160 24 160L64 160zM576 352L576 301.3L530.7 256L480 256L480 352L576 352zM256 488C256 465.9 238.1 448 216 448C193.9 448 176 465.9 176 488C176 510.1 193.9 528 216 528C238.1 528 256 510.1 256 488zM488 528C510.1 528 528 510.1 528 488C528 465.9 510.1 448 488 448C465.9 448 448 465.9 448 488C448 510.1 465.9 528 488 528z" />
+                    </svg>
+
+                    <p class="text-gray-400 text-sm sm:text-base">
+                        Fast Delivery
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Button -->
+            <div class="flex flex-col sm:flex-row
+                items-start sm:items-center
+                gap-4 mt-8 sm:mt-10" data-aos="fade-up">
+
+                <button type="button" @click="navi('Contact')" class="cursor-pointer
+                    rounded-full
+                    border-2 border-white
+                    py-3 px-6
+                    text-white
+                    text-sm sm:text-base
+                    font-medium
+                    hover:bg-white
+                    hover:text-purple-900
+                    transition duration-300 ease-in-out
+                    focus:outline-none
+                    focus:ring-2 focus:ring-orange-400
+                    focus:ring-offset-2
+                    focus:ring-offset-[#121212]">
+                    Contact Us
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
 </template>
