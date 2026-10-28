@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="text-gray-600 bg-black body-font relative w-full min-h-screen">
+    <section class="text-gray-600 bg-black body-font relative pl-55 w-full min-h-screen">
 
         <!-- Main Container -->
         <div class="w-full max-w-7xl mx-auto

@@ -22,7 +22,7 @@ export default {
             py-4 sm:py-6 lg:py-10">
 
             <!-- About Heading -->
-            <div class="mb-8 sm:mb-10 lg:mb-12">
+            <div class="mb-8 pl-50 sm:mb-10 lg:mb-12">
 
                 <h2 class="text-orange-400
                     text-base sm:text-lg
@@ -51,7 +51,7 @@ export default {
             </div>
 
             <!-- About Cards Section -->
-            <div class="grid
+            <div class="grid pl-50
                 grid-cols-1
                 sm:grid-cols-2
                 lg:grid-cols-4
@@ -164,7 +164,7 @@ export default {
             </div>
 
             <!-- Contact Button -->
-            <div class="flex flex-col sm:flex-row
+            <div class="flex pl-50 flex-col sm:flex-row
                 items-start sm:items-center
                 gap-4 mt-8 sm:mt-10" data-aos="fade-up">
 

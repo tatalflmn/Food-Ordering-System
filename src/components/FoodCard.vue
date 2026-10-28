@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-    <div class="px-6 py-5 bg-black min-h-screen pl-44 relative">
+    <div class="px-6 py-5 bg-black min-h-screen pl-50 relative">
         <!-- Search Form -->
         <form @submit.prevent class="mt-10 mx-auto max-w-xl py-2 px-6 rounded-full bg-gray-50 border flex focus-within:border-gray-300">
             <input 

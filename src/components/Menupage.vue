@@ -60,7 +60,7 @@ export default {
     <div class="bg-black/90 w-full min-h-screen flex flex-col gap-10 items-center pt-15 pb-20 px-10">
 
         <div class="">
-            <h1 class="text-white text-4xl font-bold text-start w-full max-w-6xl">
+            <h1 class="text-white text-4xl font-bold text-start pr-130 max-w-6xl">
                 Welcome to
                 <span class="font-serif italic"> <br>
                     Silingan
@@ -97,12 +97,12 @@ export default {
 
         </div>
 
-        <h1 class="text-white text-2xl font-semibold text-start w-full max-w-6xl pl-35">
+        <h1 class="text-white text-2xl font-semibold text-start w-full max-w-6xl pl-50">
             Popular Dish
         </h1>
 
         <!-- Popular Dishes Section -->
-        <div class="">
+        <div class="pl-50">
 
             <div
                 class="flex justify-center gap-5 relative w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
