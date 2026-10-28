@@ -25,7 +25,7 @@ export default {
     <!-- Responsive Navigation -->
     <nav class="fixed z-50
         bottom-0 left-0 w-full
-        bg-black/0 border-t border-orange-400/40
+        bg-black/50 border-t border-orange-400/40
         px-2 py-2
         md:top-0 md:bottom-0 md:left-0
         md:w-24 lg:w-60
