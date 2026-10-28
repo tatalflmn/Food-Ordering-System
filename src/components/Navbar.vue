@@ -25,13 +25,13 @@ export default {
     <!-- Responsive Navigation -->
     <nav class="fixed z-50
         bottom-0 left-0 w-full
-        bg-black/50 border-t border-orange-400/40
+        bg-black/0 border-t border-orange-400/40
         px-2 py-2
         md:top-0 md:bottom-0 md:left-0
         md:w-24 lg:w-60
         md:h-screen md:border-t-0 md:border-r
         md:border-orange-400/0
-        md:px-2 md:py-6
+        md:px-2 md:py-6 text-black
         flex flex-row md:flex-col
         items-center justify-around md:justify-start
         gap-1 md:gap-6 lg:gap-8">
