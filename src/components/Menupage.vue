@@ -59,15 +59,17 @@ export default {
 <template>
     <div class="bg-black/90 w-full min-h-screen flex flex-col gap-10 items-center pt-15 pb-20 px-10">
 
-        <h1 class="text-white text-4xl font-bold text-start w-full max-w-6xl pl-35">
-            Welcome to
-            <span class="font-serif italic"> <br>
-                Silingan
-            </span>
-        </h1>
+        <div class="">
+            <h1 class="text-white text-4xl font-bold text-start w-full max-w-6xl">
+                Welcome to
+                <span class="font-serif italic"> <br>
+                    Silingan
+                </span>
+            </h1>
+        </div>
 
         <!-- Categories Section -->
-        <div class="w-full max-w-6xl flex flex-wrap justify-start gap-8 z-10 pl-35">
+        <div class="w-full max-w-6xl flex flex-wrap justify-center gap-8 z-10">
 
             <div @click="clickMeal"
                 class="w-40 h-40 border px-5 py-2 border-yellow-400 rounded-lg items-center flex flex-col justify-between cursor-pointer hover:bg-yellow-500 duration-300">
@@ -100,24 +102,28 @@ export default {
         </h1>
 
         <!-- Popular Dishes Section -->
-        <div class="flex justify-center gap-5 w-full relative pl-15">
-            <div v-for="popular in populars" :key="popular.id" class="flex relative z-99">
-                <div class="relative">
-                    <img :src="popular.image" alt="" class="w-25 h-25 absolute top-0 left-8">
+        <div class="">
 
-                    <div
-                        class=" mt-13 border w-43 h-35 border-orange-600 rounded-lg flex flex-col items-center gap-5 px-5  pt-17 cursor-pointer hover:bg-orange-700">
+            <div
+                class="flex justify-center gap-5 relative w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+                <div v-for="popular in populars" :key="popular.id" class="flex relative z-99">
+                    <div class="relative">
+                        <img :src="popular.image" alt="" class="w-25 h-25 absolute top-0 left-8">
 
-                        <div>
-                            <hr class="  border-white w-full">
-                            <p class="text-white text-center">{{ popular.name }}</p>
-                            <hr class="  border-white w-full">
+                        <div
+                            class=" mt-13 border w-43 h-35 border-orange-600 rounded-lg flex flex-col items-center gap-5 px-5  pt-17 cursor-pointer hover:bg-orange-700">
+
+                            <div>
+                                <hr class="  border-white w-full">
+                                <p class="text-white text-center">{{ popular.name }}</p>
+                                <hr class="  border-white w-full">
+                            </div>
+
+
                         </div>
-
-                        
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
