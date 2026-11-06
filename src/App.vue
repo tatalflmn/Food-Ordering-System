@@ -356,7 +356,6 @@ export default {
 </script>
 
 <template>
-  <!-- Pass the computed cartCount prop to the Navbar component -->
   <Navbar :cart-count="cartCount" @GoTo="section" @showCartModal="openCartModal" />
 
   <Home v-if="currentPage === 'Home'" @GoTo="section" />
